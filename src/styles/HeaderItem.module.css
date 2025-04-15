@@ -1,0 +1,48 @@
+.itemContainer {
+  display: flex;
+  margin-top: -6vh;
+  align-items: center;
+  margin-right: 1vw;
+  width: fit-content;
+}
+
+.item {
+  cursor: pointer;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  margin-top: -5vh;
+}
+
+.selectedItem {
+  position: relative;
+  color: var(--batom-cliche-mt-claro) !important;
+  font-family: 'EB Garamond', serif;
+  transform: translate(0, -55%) rotate(-2deg);
+  font-size: 22px;
+}
+
+.selectedItem::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9vw;
+  height: auto;  
+  aspect-ratio: 177 / 149;
+  background-image: url('/laco.svg');
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -30%) rotate(2deg);
+  z-index: -1;
+}
+
+.ball {
+  height: 0.5vw;
+  aspect-ratio: 1/1;
+  width: auto;
+  display: block;
+  border-radius: 100%;
+  margin-top: -5vh;
+  background-color: var(--batom-cliche);
+}

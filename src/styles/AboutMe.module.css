@@ -1,0 +1,53 @@
+.aboutMeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+  margin-bottom: 10vh;
+  gap: 10vw;
+}
+
+.imgInternCircle {
+  aspect-ratio: 1/1;
+  width: 300px;
+  border-radius: 100%;
+  background-color: var(--leite-queimado);
+  overflow: visible;
+  position: relative;
+}
+.imgOutCircle {
+  aspect-ratio: 1/1;
+  width: 350px;
+  height: auto;
+  background: #FFB3BE;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgInternCircle img {
+  width: 120%;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  position: absolute;
+  bottom: 0;
+}
+
+.textContainer {
+  max-width: 30vw;
+  text-align: center;
+}
+
+.textContainer h2 {
+  font-family: 'Great Vibes', cursive;
+  color: var(--batom-cliche);
+  font-size: 48px;
+}
+
+.textContainer p {
+  font-family: 'EB Garamond', serif;
+  color: var(--batom-cliche);
+  font-size: 26px;
+  margin-top: 8vh;
+}

@@ -1,0 +1,9 @@
+.postsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 15vh;
+  overflow: hidden;
+}
+
