@@ -12,9 +12,11 @@ export default function PostsCarrousel(props: PostsCarrouselProps) {
 
   return (
     <div className={styles.carrouselContainer}>
-      {
-        duplicatedPosts.map( (post, i) => <Post key={i} post={post}/> )
-      }
+      <div className={styles.carrouselTrack}>
+        {
+          duplicatedPosts.map( (post, i) => <Post key={i} post={post}/> )
+        }
+      </div>
     </div>
   )
 }
